@@ -1,0 +1,60 @@
+.bg-white{
+  background-color: white;
+}
+
+.list-style-none{
+  list-style: none;
+}
+
+.right-0{
+  right: 0;
+}
+
+.left-auto{
+  left: auto !important;
+}
+
+.left-50-percent{
+  left: 50% !important;
+}
+
+.border-radius-30{
+  border-radius: 30px !important;
+}
+
+#searchInput{
+  height: 50px;
+}
+
+.flex-column { 
+  max-width : 260px;
+}
+
+img {
+  margin: 5px;
+}
+
+.relative-position{
+  position: relative;
+}
+
+.item:hover .top-layout {
+  opacity: 1;
+}
+
+.item:hover .img-fluid {
+  opacity: 0.3;
+}
+
+.text-decoration-none{
+  text-decoration: none;
+}
+
+.top-layout {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: end;
+  width: 100%;
+}

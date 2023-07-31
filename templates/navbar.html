@@ -1,0 +1,90 @@
+{% load static %}
+
+<div class="navbar navbar-light bg-white navbar-expand-md px-3">
+  <a href="{% url 'home' %}" class="navbar-brand">
+    <img
+      src="{% static 'images/logo.png' %}"
+      alt=""
+      width="50px"
+      height="50px"
+      ezimgfmt="rs rscb1 src ng ngcb1"
+      class="ezlazyloaded"
+      data-ezsrc="/static_files/images/logos/logo_1.png?ezimgfmt=rs:50x50/rscb1/ngcb1/notWebP"
+      ezoid="0.8728878509987688"
+    />
+  </a>
+  <ul class="navbar-nav list-style-none">
+    <li class="nav-item mx-3">
+      <a href="{url 'home' }" class="btn btn-dark btn-sm border-radius-30 p-2 px-3">Home</a>
+    </li>
+  </ul>
+  <div class="w-50">
+    <div class="input-icons position-relative">
+      <i class="fa-solid fa-magnifying-glass position-absolute translate-bottom mt-2 ms-2 text-secondary p-2"></i>
+      <input class="form-control border-radius-30 px-5" id="searchInput" />
+    </div>
+  </div>
+  
+  <ul class="navbar-nav ms-auto list-style-none">
+    <li class="nav-item mx-3">
+      <a href="#" class="btn btn-dark btn-sm border-radius-30 p-2 px-3">Create Pin</a>
+    </li>
+    <li class="nav-item dropdown mx-2">
+      <a class="nav-link position-relative" href="#" 
+        id="notificationDropdown" role="button" 
+        data-toggle="dropdown" aria-haspopup="true" 
+        aria-expanded="false" data-bs-toggle="dropdown"
+      >
+        <i class="fa-regular fa-bell"></i>
+        <span
+          id="chatNotif"
+          class="position-absolute top-0 left-50-percent p-1 translate-bottom badge rounded-pill bg-danger"
+        >
+        </span>
+      </a>
+      <div class="dropdown-menu left-auto right-0" aria-labelledby="notificationDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown mx-2">
+      <a class="nav-link position-relative" href="#" 
+        id="messageDropdown" role="button" 
+        data-toggle="dropdown" aria-haspopup="true" 
+        aria-expanded="false" data-bs-toggle="dropdown"
+      >
+        <i class="fa-regular fa-message"></i>
+        <span
+          id="chatNotif"
+          class="position-absolute top-0 left-50-percent p-1 translate-bottom badge rounded-pill bg-danger"
+        >
+        </span>
+      </a>
+      <div class="dropdown-menu left-auto right-0" aria-labelledby="messageDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item mx-2">
+      <a href="#" class="nav-link">
+        <i class="fa-regular fa-user"></i>
+      </a>
+    </li>
+    <li class="nav-item dropdown mx-2">
+      <a class="nav-link" href="#" 
+        id="moreDropdown" role="button" 
+        data-toggle="dropdown" aria-haspopup="true" 
+        aria-expanded="false" data-bs-toggle="dropdown"
+      >
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+      <div class="dropdown-menu left-auto right-0" aria-labelledby="moreDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+  </ul>
+</div>
